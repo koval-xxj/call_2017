@@ -1,8 +1,3 @@
-<?php
-  //var_dump();
-  
-?>
-
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -312,9 +307,10 @@
         </section>
 
         <section clas="wow fadeInUp">
-        	<div class="map-wrapper">
-        	</div>
+          <div id="map-wrapper" style=" width: 100%; height: 500px;"></div>
+          
         </section>
+        
 
         <footer>
             <div class="container">
@@ -330,9 +326,30 @@
 
 
         <!-- Js -->
+        
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map-wrapper'), {
+              zoom: 4,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        
         <script src="/js/home/vendor/modernizr-2.6.2.min.js"></script>
         <script src="/js/home/vendor/jquery-1.10.2.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <!--<script src="https://maps.googleapis/maps/api/js?sensor=false"></script>-->
+        
+        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5BzdFzXB1BV8Ps6Re5hggANtQPE50-Y&callback=initMap"async defer></script>-->
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5BzdFzXB1BV8Ps6Re5hggANtQPE50-Y&callback=initMap">
+    </script>
         <script src="/js/home/jquery.lwtCountdown-1.0.js"></script>
         <script src="/js/home/bootstrap.min.js"></script>
         <script src="/js/home/owl.carousel.min.js"></script>
@@ -343,6 +360,7 @@
         <script src="/js/home/plugins.js"></script>
         <script src="/js/home/wow.min.js"></script>
         <script src="/js/home/main.js"></script>
+        
         
     </body>
 </html>
