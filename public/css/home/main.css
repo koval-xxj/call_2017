@@ -337,7 +337,7 @@ a:active {
 
 #hero-area {
   padding:180px 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(135deg, #8ec64e 0%, #41aba0 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(135deg, #FCB714 0%, #cca750 100%) repeat scroll 0 0;
 }
 #hero-area:before {
     content: "";
@@ -439,7 +439,7 @@ a:active {
     color: #fff;
 }
 .navbar-default.animated .navbar-nav > li.current > a {
-    color: #82c25a;
+    color: #8498c7;
 }
 #hero-area .navbar-default .navbar-nav {
     padding-top: 11px;
@@ -600,7 +600,7 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
   background: -webkit-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
   background: -o-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
   background: -ms-linear-gradient(-45deg, #8ec64e 0%,#41aba0 100%);
-  background: linear-gradient(135deg, #8ec64e 0%,#41aba0 100%);
+  background: linear-gradient(135deg, #102E77 0%, #c7c7c7 100%);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -738,7 +738,8 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
     background-size: cover;
     position: relative;
     border-top: 1px solid #eee;
-    color: #fff;
+    color: #232586;
+    /*opacity: 0.3;*/
 }
 
 #call-to-action .block h2 {

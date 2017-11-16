@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Notes </title>
+    <title>Conference 2017</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -61,10 +61,10 @@
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <nav class="collapse navbar-collapse" id="navbar">
 	                <ul class="nav navbar-nav navbar-right" id="top-nav">
-	                    <li class="current"><a href="#body">Home</a></li>
-	                    <li><a href="#about">About us</a></li>
-	                    <li><a href="#service">Services</a></li>
-	                    <li><a href="#contact">Contact</a></li>
+	                    <li class="current"><a href="#body">Главная</a></li>
+	                    <li><a href="#about">Информация</a></li>
+	                    <li><a href="#service">Цены</a></li>
+	                    <li><a href="#contact">Контакты</a></li>
 	                </ul>
 	            </nav><!-- /.navbar-collapse -->
 	        </div><!-- /.container-fluid -->
@@ -91,28 +91,28 @@
 	                                        <div class="digit">0</div>
 	                                        <div class="digit">0</div>
 	                                        <div class="digit">0</div>
-	                                        <span class="dash_title">Days</span>
+	                                        <span class="dash_title">Дней</span>
 	                                    </div>
 	                                </li>
 	                                <li>
 	                                    <div class="dash hours_dash">
 	                                        <div class="digit">0</div>
 	                                        <div class="digit">0</div>
-	                                        <span class="dash_title">Hours</span>
+	                                        <span class="dash_title">Часов</span>
 	                                    </div>
 	                                </li>
 	                                <li>
 	                                    <div class="dash minutes_dash">
 	                                        <div class="digit">0</div>
 	                                        <div class="digit">0</div>
-	                                        <span class="dash_title">Minutes</span>
+	                                        <span class="dash_title">Минут</span>
 	                                    </div>
 	                                </li>
 	                                <li>
 	                                    <div class="dash seconds_dash">
 	                                        <div class="digit">0</div>
 	                                        <div class="digit">0</div>
-	                                        <span class="dash_title">Seconds</span>
+	                                        <span class="dash_title">Секунд</span>
 	                                    </div>
 	                                </li>
 	                            </ul>
@@ -178,12 +178,13 @@
                         <div class="service">
                             <div class="icon-box">
                             	<span class="icon">
-                                    <i class="ion-android-desktop"></i>   
-                                </span>
+                                <i class="ion-speedometer"></i>   
+                              </span>
                             </div>
                             <div class="caption">
-                                <h3>Fully Responsive</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                              <h3>200 грн.</h3>
+                              <p>Ранняя регистрация</p>
+                              <p>До 15 октября</p>
                             </div>
                         </div>
                     </div>
@@ -195,8 +196,9 @@
                                 </span>
                             </div>
                             <div class="caption">
-                            	<h3>Speed Optimized</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                            	<h3>250 грн.</h3>
+                              <p>Стандартная регистрация</p>
+                              <p>После 15 октября</p>
                             </div>
                         </div>
                     </div>
@@ -204,12 +206,12 @@
                         <div class="service">
                             <div class="icon-box">
                             	<span class="icon">
-                                    <i class="ion-ios-infinite-outline"></i>   
-                                </span>
+                                <i class="ion-ios-infinite-outline"></i>
+                              </span>
                             </div>
                             <div class="caption">
-                                <h3>Tons of Feature</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                              <h3>300 грн.</h3>
+                              <p>В день конференции</p>
                             </div>
                         </div>
                     </div>
@@ -217,12 +219,12 @@
                         <div class="service">
                             <div class="icon-box">
                             	<span class="icon">
-                                    <i class="ion-ios-cloud-outline"></i>   
-                                </span>
+                                <i class="ion-ios-cloud-outline"></i>
+                              </span>
                             </div>
                             <div class="caption">
-                                <h3>Cloud Option</h3>
-                                <p>Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+                              <h3>100 грн.</h3>
+                              <p>Вечернее посещение</p>
                             </div>
                         </div>
                     </div>
@@ -232,7 +234,21 @@
 
         <section id="call-to-action" class="section">
             <div class="container">
-                <div class="row">
+              <table style="width: 100%">
+                <tr>
+                  <td>Первый дядька</td>
+                  <td>Второй дядька</td>
+                  <td>Третий дядька</td>
+                  <td>Четвёртый дядька</td>
+                </tr>
+                <tr>
+                  <td><img src="/images/human.png" /></td>
+                  <td><img src="/images/human.png" /></td>
+                  <td><img src="/images/human.png" /></td>
+                  <td><img src="/images/human.png" /></td>
+                </tr>
+              </table>
+<!--                <div class="row">
                     <div class="col-md-12 wow text-center">
                         <div class="block">
                             <h2>Lorem ipsum dolor sit amet, consectetur adipisicing</h2>
@@ -243,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section><!-- #call-to-action close -->
 
@@ -264,42 +280,55 @@
                     <div class="col-xs-12 col-sm-12 col-md-5 wow fadeInUp">
 						<div class="block text-left">
 							<div class="sub-heading">
-								<h4>Contact Address</h4>
+								<h4>Контактная информация</h4>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos maxime voluptate doloribus, voluptatum nemo vel ipsa in eligendi, ullam. Ducimus consequuntur labore error hic.</p>
 							</div>
 							<address class="address">
-                                <hr>
+                <hr>
 								<p>Dhanmondi 32,<br> Dhaka,<br> Bangladesh</p>
-                                <hr>
-                                <p><strong>E:</strong>&nbsp;hello@foundry.net<br>
-                                <strong>P:</strong>&nbsp;+614 3948 2726</p>
-								
-                                
+                <hr>
+                <p><strong>E:</strong>&nbsp;hello@foundry.net<br>
+                <strong>P:</strong>&nbsp;+614 3948 2726</p>
 							</address>
 						</div>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 wow fadeInUp" data-wow-delay="0.3s">
                     	<div class="form-group">
-                    	    <form action="#" method="post" id="contact-form">
-                    	        <div class="input-field">
-                    	            <input type="text" class="form-control" placeholder="Your Name" name="name">
-                    	        </div>
-                    	        <div class="input-field">
-                    	            <input type="email" class="form-control" placeholder="Email Address" name="email">
-                    	        </div>
-                    	        <div class="input-field">
-                    	            <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
-                    	        </div>
-                    	        <button class="btn btn-send" type="submit">Send me</button>
-                    	    </form>
+                        <form action="#" method="post" id="contact-form">
+                          <div class="input-field">
+                            <input type="text" class="form-control" placeholder="Ф.И.О" name="name">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Телефон" name="">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Страна" name="">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Город" name="">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Возраст" name="">
+                          </div>
+                          <div class="input-field">
+                            <input type="email" class="form-control" placeholder="Церковь" name="">
+                          </div>
+<!--                            <div class="input-field">
+                              <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
+                            </div>-->
+                            <button class="btn btn-send" type="submit">Зарегестрироваться</button>
+                        </form>
 
-                    	    <div id="success">
-                    	        <p>Your Message was sent successfully</p>
-                    	    </div>
-                    	    <div id="error">
-                    	        <p>Your Message was not sent successfully</p>
-                    	    </div>
+                        <div id="success">
+                            <p>Your Message was sent successfully</p>
+                        </div>
+                        <div id="error">
+                            <p>Your Message was not sent successfully</p>
+                        </div>
                     	</div>
                     </div>
                 </div>
@@ -326,30 +355,14 @@
 
 
         <!-- Js -->
-        
-        <script>
-          function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById('map-wrapper'), {
-              zoom: 4,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-        
+       
         <script src="/js/home/vendor/modernizr-2.6.2.min.js"></script>
         <script src="/js/home/vendor/jquery-1.10.2.min.js"></script>
         <!--<script src="https://maps.googleapis/maps/api/js?sensor=false"></script>-->
         
-        <link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+        <!--<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">-->
         <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5BzdFzXB1BV8Ps6Re5hggANtQPE50-Y&callback=initMap"async defer></script>-->
-        <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5BzdFzXB1BV8Ps6Re5hggANtQPE50-Y&callback=initMap">
-    </script>
+        
         <script src="/js/home/jquery.lwtCountdown-1.0.js"></script>
         <script src="/js/home/bootstrap.min.js"></script>
         <script src="/js/home/owl.carousel.min.js"></script>
@@ -360,7 +373,9 @@
         <script src="/js/home/plugins.js"></script>
         <script src="/js/home/wow.min.js"></script>
         <script src="/js/home/main.js"></script>
-        
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5BzdFzXB1BV8Ps6Re5hggANtQPE50-Y&callback=initMap">
+    </script>
         
     </body>
 </html>
