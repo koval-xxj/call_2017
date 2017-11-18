@@ -864,3 +864,10 @@ footer p a {
 footer p a:hover {
   color: #fff;
 }
+
+.image_gradient {
+  height: 453px;
+  background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../../images/photo-8.jpg); 
+  background-size: cover;
+  color: #fff;
+}

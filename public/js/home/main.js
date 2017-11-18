@@ -60,28 +60,25 @@ $(document).ready(function(){
     $("#contact-form").validate({
         rules: {
             name: {
-                required: true,
-                minlength: 2
-            },
-            message: {
-                required: true,
-                minlength: 2
+              required: true,
+              minlength: 2
             },
             email: {
-                required: true,
-                email: true
+              required: true,
+              email: true
+            },
+            phone: {
+              required: true,
+              minlength: 10
             }
         },
         messages: {
             name: {
-                required: "Please enter Your Name",
-                minlength: "Your name must consist of at least 2 characters"
+                required: "Введите своё полное имя",
+                minlength: "Your name must consist of at least 2 characters",
             },
-            message: {
-                required: "Please Write Something",
-                minlength: "Your message must consist of at least 2 characters"
-            },
-            email: "Please enter a valid email address"
+            email: "Введите адрес своей почты",
+            phone: 'Введите номер телефона'
         },
         submitHandler: function(form) {
             $(form).ajaxSubmit({
