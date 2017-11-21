@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::post('/add_new_visitor', 'VisitorsController@add_new');

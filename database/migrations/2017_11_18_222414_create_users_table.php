@@ -17,6 +17,19 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->timestamps();
         });
+        
+        Schema::create('visitors', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name', 255);
+            $table->string('email', 100)->unique();
+            $table->string('phone', 30)->unique();
+            $table->string('country', 20)->nullable();
+            $table->string('city', 20)->nullable();
+            $table->string('age', 20)->nullable();
+            $table->string('chirch', 100);
+            $table->dateTime('register_date');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -27,5 +40,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('visitors');
     }
 }

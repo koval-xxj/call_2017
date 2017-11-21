@@ -70,6 +70,18 @@ $(document).ready(function(){
             phone: {
               required: true,
               minlength: 10
+            },
+            country: {
+              required: false
+            },
+            city: {
+              required: false
+            },
+            age: {
+              required: false
+            },
+            chirch: {
+              required: false
             }
         },
         messages: {
@@ -84,7 +96,8 @@ $(document).ready(function(){
             $(form).ajaxSubmit({
                 type:"POST",
                 data: $(form).serialize(),
-                url:"mail.php",
+                url: "/add_new_visitor",
+                dataType: 'JSON',
                 success: function() {
                     $('#contact-form :input').attr('disabled', 'disabled');
                     $('#contact-form').fadeTo( "slow", 0.15, function() {

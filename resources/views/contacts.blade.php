@@ -35,24 +35,25 @@
                     <input type="email" class="form-control" placeholder="Email" name="email">
                   </div>
                   <div class="input-field">
-                    <input type="email" class="form-control" placeholder="Телефон" name="phone">
+                    <input type="text" class="form-control" placeholder="Телефон" name="phone">
                   </div>
                   <div class="input-field">
-                    <input type="email" class="form-control" placeholder="Страна" name="country">
+                    <input type="text" class="form-control" placeholder="Страна" name="country">
                   </div>
                   <div class="input-field">
-                    <input type="email" class="form-control" placeholder="Город" name="city">
+                    <input type="text" class="form-control" placeholder="Город" name="city">
                   </div>
                   <div class="input-field">
-                    <input type="email" class="form-control" placeholder="Возраст" name="age">
+                    <input type="text" class="form-control" placeholder="Возраст" name="age">
                   </div>
                   <div class="input-field">
-                    <input type="email" class="form-control" placeholder="Церковь" name="chirch">
+                    <input type="text" class="form-control" placeholder="Церковь" name="chirch">
                   </div>
 <!--                            <div class="input-field">
                       <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
                     </div>-->
-                    <button class="btn btn-send" type="submit">Зарегестрироваться</button>
+                  {{ csrf_field() }}  
+                  <button class="btn btn-send" type="submit">Зарегестрироваться</button>
                 </form>
 
                 <div id="success">
