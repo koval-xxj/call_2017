@@ -52,7 +52,7 @@
 <!--                            <div class="input-field">
                       <textarea class="form-control" placeholder="Your Message" rows="3" name="message"></textarea>
                     </div>-->
-                  {{ csrf_field() }}  
+                  {{ csrf_field() }}
                   <button class="btn btn-send" type="submit">Зарегестрироваться</button>
                 </form>
 

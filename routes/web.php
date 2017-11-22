@@ -18,5 +18,8 @@ Route::get('/', function () {
 Route::post('/add_new_visitor', 'VisitorsController@add_new');
 
 Route::prefix('admin')->group(function () {
-  Route::get('/', 'Admin\LoginController@base_show');
+  Route::get('/login', 'Admin\LoginController@base_show')->name('adm_login');
+  Route::post('/login', 'Admin\LoginController@auth');
+  Route::get('/visitors', 'Admin\VisitorsListController@show');
+  Route::get('/', 'Admin\BaseController@show')->name('adm_base');
 });

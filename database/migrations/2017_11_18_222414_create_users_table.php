@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\DB;
 
 class CreateUsersTable extends Migration
 {
@@ -30,6 +31,26 @@ class CreateUsersTable extends Migration
             $table->dateTime('register_date');
             $table->timestamps();
         });
+        
+        Schema::create('admins', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('login', 255);
+            $table->string('email', 255)->unique();
+            $table->string('password', 255);
+            $table->timestamps();
+            $table->unique('login', 'password');
+        });
+        
+        $oCheck = DB::table('admins')->select('id')->where(['login', '=', 'admin'], ['email', '=', 'koval.xxj@gmail.com'])->first();
+        if (!count($oCheck)) {
+          DB::table('admins')->insert(
+            [
+              'login' => 'admin',
+              'email' => 'koval.xxj@gmail.com',
+              'password' => md5('calladmin'),
+            ]
+          );
+        }
     }
 
     /**
@@ -41,5 +62,6 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('users');
         Schema::dropIfExists('visitors');
+        Schema::dropIfExists('admins');
     }
 }
