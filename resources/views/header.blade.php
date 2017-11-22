@@ -53,7 +53,6 @@ Header start
                                 <div class="dash days_dash">
                                     <div class="digit">0</div>
                                     <div class="digit">0</div>
-                                    <div class="digit">0</div>
                                     <span class="dash_title">Дней</span>
                                 </div>
                             </li>
