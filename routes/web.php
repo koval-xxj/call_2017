@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+  return view('home');
 });
 
 Route::post('/add_new_visitor', 'VisitorsController@add_new');
+
+Route::prefix('admin')->group(function () {
+  Route::get('/', 'Admin\LoginController@base_show');
+});

@@ -31,20 +31,25 @@ class VisitorsController extends Controller
     
     $check = $this->check_post();
     if ($check) {
-      return response($check, 400)->header('Content-Type', 'text/plain');
+      return response()->json(['type' => 'field', 'field' => $check, 'Поле обязательно для заполнения.'], 400);
     }
     $check = $this->check_user();
     if (count($check) > 0) {
-      $message = '';
+      $aResponce = [];
+      $status = 200;
       switch (true) {
         case ($check->email == trim($_POST['email'])):
-          $message = 'Пользователь с емайлом ' . $_POST['email'] . ' уже существует.';
+          $status = 400;
+          $aResponce['type'] = 'email';
+          $aResponce['message'] = 'Пользователь с емайлом ' . $_POST['email'] . ' уже существует.';
           break;
         case ($check->phone == trim($_POST['phone'])):
-          $message = 'Пользователь с телефоном ' . $_POST['phone'] . ' уже существует.';
+          $status = 400;
+          $aResponce['type'] = 'number';
+          $aResponce['message'] = 'Пользователь с телефоном ' . $_POST['phone'] . ' уже существует.';
           break;
       }
-      return response($message, 400)->header('Content-Type', 'text/plain');
+      return response()->json($aResponce, $status);
     }
     //Log::info('CHECK', (array)$check);
     

@@ -57,7 +57,7 @@
                 </form>
 
                 <div id="success">
-                    <p>Your Message was sent successfully</p>
+                  <p style="color: green; font-weight: bold;">Вы зарегестрированы успешно.</p>
                 </div>
                 <div id="error">
                     <p>Your Message was not sent successfully</p>

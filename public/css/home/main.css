@@ -866,8 +866,35 @@ footer p a:hover {
 }
 
 .image_gradient {
-  height: 453px;
+  height: 1000px;
   background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../../images/photo-8.jpg); 
   background-size: cover;
   color: #fff;
+}
+
+/* Schedule */
+
+.schedule_header {
+  margin-bottom: 20px;
+  color: #ccc;
+  text-align: center;
+  /*font-family: 'Roboto Condensed', serif;*/
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.schedule_text {
+  color: #ccc;
+  font-family: 'Open Sans', sans-serif , Arial , Verdana , 'Trebuchet MS';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.schedule_background {
+  height: 580px;
+  background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../../images/background-2426.jpg);
+  background-size: cover;
 }

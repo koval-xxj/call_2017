@@ -69,7 +69,7 @@ $(document).ready(function(){
             },
             phone: {
               required: true,
-              minlength: 10
+              phoneUKR: true
             },
             country: {
               required: false
@@ -90,7 +90,6 @@ $(document).ready(function(){
                 minlength: "Your name must consist of at least 2 characters",
             },
             email: "Введите адрес своей почты",
-            phone: 'Введите номер телефона'
         },
         submitHandler: function(form) {
             $(form).ajaxSubmit({
@@ -106,10 +105,23 @@ $(document).ready(function(){
                         $('#success').fadeIn();
                     });
                 },
-                error: function() {
-                    $('#contact-form').fadeTo( "slow", 0.15, function() {
-                        $('#error').fadeIn();
-                    });
+                error: function(responce) {
+                  //console.log(responce.responseJSON);
+                  switch(responce.responseJSON.type) {
+                    case 'number':
+                      $('[name="phone"]').after('<label id="phone-error" class="error" for="phone">' + responce.responseJSON.message + '</label>');
+                      break;
+                    case 'email':
+                      $('[name="email"]').after('<label id="email-error" class="error" for="email">' + responce.responseJSON.message + '</label>');
+                      break;
+                    case 'field':
+                      $('[name="' + responce.responseJSON.field + '"]').after('<label id="email-error" class="error" for="email">' + responce.responseJSON.message + '</label>');
+                      break;
+                  }
+                  
+//                  $('#contact-form').fadeTo( "slow", 0.15, function() {
+//                      $('#error').fadeIn();
+//                  });
                 }
             });
         }

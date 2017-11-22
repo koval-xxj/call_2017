@@ -77,7 +77,7 @@
         <script src="/js/home/bootstrap.min.js"></script>
         <script src="/js/home/owl.carousel.min.js"></script>
         <script src="/js/home/jquery.validate.min.js"></script>
-        <!--<script src="/js/home/additional-methods.min.js"></script>-->
+        <script src="/js/home/additional-methods.min.js"></script>
         <script src="/js/home/jquery.form.js"></script>
         <script src="/js/home/jquery.nav.js"></script>
         <script src="/js/home/jquery.sticky.js"></script>
