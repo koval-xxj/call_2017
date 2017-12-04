@@ -3,30 +3,25 @@
   <div>
     <table style="width: 100%; height: 100%;">
       <tr>
+        <td style="text-align: center;">Петр Коваленко</td>
+        <td style="text-align: center;">Антон Крафт</td>
         <td style="text-align: center;">Джошуа Хьюз</td>
         <td style="text-align: center;">Сергей Мартюничев</td>
-        <td style="text-align: center;">Антон Крафт</td>
-        <td style="text-align: center;">Петр Коваленко</td>
         <td style="text-align: center;">Вадим Фещенко</td>
       </tr>
       <tr>
+        <td style="text-align: center;"><img src="/images/Petr.jpg" width="250" height="250" /></td>
+        <td style="text-align: center;"><img src="/images/pa.jpg" width="250" height="250" /></td>
         <td style="text-align: center;"><img src="/images/Djo.jpg" width="250" height="250" /></td>
         <td style="text-align: center;"><img src="/images/mar.jpg" width="250" height="250" /></td>
-        <td style="text-align: center;"><img src="/images/pa.jpg" width="250" height="250" /></td>
-        <td style="text-align: center;"><img src="/images/Petr.jpg" width="250" height="250" /></td>
         <td style="text-align: center;"><img src="/images/Veshenko.jpg" width="250" height="250" /></td>
       </tr>
       <tr>
-        <td style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi atque eum exercitationem facere illo molestiae porro qui quidem sed tempora.</td>
-        <td style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi atque eum exercitationem facere illo molestiae porro qui quidem sed tempora.</td>
-        <td style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi atque eum exercitationem facere illo molestiae porro qui quidem sed tempora.</td>
-        <td style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi atque eum exercitationem facere illo molestiae porro qui quidem sed tempora.</td>
-        <td style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Animi atque eum exercitationem facere illo molestiae porro qui quidem sed tempora.</td>
+        <td style="text-align: center;">Старший пастор Харьковской Христианской Церкви</td>
+        <td style="text-align: center;">Молодежный пастор Харьковской Христианской Церкви</td>
+        <td style="text-align: center;">Jimmy Hughes Ministries/Free the Oppressed Foundation (Маями, США).</td>
+        <td style="text-align: center;">Ассистирующий пастор церкви «Слово жизни» (Москва).</td>
+        <td style="text-align: center;">Пастор церкви Hillsong (Москва).</td>
       </tr>
     </table>
   </div>
